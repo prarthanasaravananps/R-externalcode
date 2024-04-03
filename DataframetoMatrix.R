@@ -1,0 +1,6 @@
+data<-data.frame(height=c(150,170,145,165,154),weight=c(45,64,36,76,56),age=c(45,76,34,87,54))
+print("The DataFrame:")
+print(data)
+mat<-as.matrix(data)
+print("Dataframe to Matrix:")
+print(mat)

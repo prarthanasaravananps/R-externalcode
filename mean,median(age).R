@@ -1,0 +1,5 @@
+age<-c(25,30,45,76,45)
+mean_age<-mean(age)
+median_age<-median(age)
+print(paste("Mean age:",mean_age))
+print(paste("Median age:",median_age))
