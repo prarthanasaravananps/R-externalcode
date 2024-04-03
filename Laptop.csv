@@ -1,0 +1,11 @@
+﻿Order_ID,Product,Quantity,Price,Date,Category
+1,Laptop,2,800,05-01-2022,Electronics
+2,Smartphone,1,600,10-01-2022,Electronics
+3,Headphones,3,50,15-01-2022,Electronics
+4,T-shirt,5,20,20-01-2022,Apparel
+5,Jeans,2,50,01-02-2022,Apparel
+6,Sneakers,1,80,10-02-2022,Apparel
+7,Tablet,1,300,25-02-2022,Electronics
+8,Backpack,2,40,20-02-2022,Accessories
+9,Sunglasses,1,25,05-03-2022,Accessories
+10,Watch,1,100,10-03-2022,Accessories

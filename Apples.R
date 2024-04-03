@@ -1,0 +1,10 @@
+data<-read.csv("D://xampp/Dataset/Apples.csv")
+print(data)
+highest_revenue_date<- data$Date[which.max(data$Quantity * data$Price)]
+print(highest_revenue_date)
+average_dairy_qty<- mean(data$Quantity[data$Category == "Dairy"]) 
+print(average_dairy_qty)
+num_categories<- length(unique(data$Category))
+print(num_categories)
+sales_by_category<- aggregate(Quantity~Category, data, sum)
+barplot(sales_by_category$Quantity, names.arg = sales_by_category$Category, main = "Sales by Category",xlab = "Category", ylab = "Total Sales")

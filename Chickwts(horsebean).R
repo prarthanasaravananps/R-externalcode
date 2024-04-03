@@ -1,0 +1,9 @@
+data<-chickwts
+#print(data)
+avg_weight_by_feed<-tapply(chickwts$weight,chickwts$feed,mean)
+print(avg_weight_by_feed)
+median_weight_feed<-tapply(chickwts$weight,chickwts$feed,median)
+max_median<-names(which.max(median_weight_feed))
+print(max_median)
+num_horsebean_chicks<-sum(chickwts$feed=="horsebean")
+print(num_horsebean_chicks)

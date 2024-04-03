@@ -1,0 +1,7 @@
+avg<-mean(women$height)
+print(avg)
+ran<-range(women$weight)
+print(ran)
+tallest<-max(women$height)
+print(tallest)
+plot(women$height,women$weight,xlab = "Height",ylab="Weight",main="Relationship between Height and Weight",col="Blue",pch=16)

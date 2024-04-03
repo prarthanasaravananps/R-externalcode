@@ -1,0 +1,10 @@
+data<-read.csv("D://xampp/Dataset/Burger.csv")
+Menu_per_category<-table(data$Category)
+print(Menu_per_category)
+highest_cal<-data[which.max(data$Calories),"Menu_Item"]
+print(highest_cal)
+avg_cal_cnt<-tapply(data$Calories,data$Category,mean)
+highest_avg_cal<-names(which.max(avg_cal_cnt))
+print(highest_avg_cal)
+revenue_by_cat<-tapply(data$Price,data$Category,sum)
+print(revenue_by_cat)
